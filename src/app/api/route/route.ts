@@ -1,3 +1,4 @@
+import { env } from "@/env";
 
 interface RequestTypes {
   number: number;
@@ -7,7 +8,7 @@ export async function POST(request: Request) {
   const { number }: Partial<RequestTypes> = await request.json();
 
   const res = await fetch(
-    `https://teste-b.vercel.app/results`,
+    `${env.NEXT_PUBLIC_BASE_URL}/results`,
     {
       method: "POST",
       headers: {

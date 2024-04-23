@@ -1,12 +1,14 @@
 import { NoResultCard } from "@/components/card/card";
 import { ResultCard } from "@/components/card/result_card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { env } from "@/env";
+
 import { DataTypes } from "@/types/types";
 import { History as HistoryIcon } from "lucide-react";
 
 export default async function History() {
 
-    const res = await fetch(`https://teste-b.vercel.app/`);
+    const res = await fetch(`${env.NEXT_PUBLIC_BASE_URL}/results`);
     const data: DataTypes[] = await res.json();
 
   return (
