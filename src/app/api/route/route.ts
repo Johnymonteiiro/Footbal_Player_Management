@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   const { number }: Partial<RequestTypes> = await request.json();
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/calculate`,
+    `https://jsonplaceholder.org/posts`,
     {
       method: "POST",
       headers: {
