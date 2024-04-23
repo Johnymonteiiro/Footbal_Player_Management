@@ -6,7 +6,7 @@ import { History as HistoryIcon } from "lucide-react";
 
 export default async function History() {
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
+    const res = await fetch(`https://teste-b.vercel.app/`);
     const data: DataTypes[] = await res.json();
 
   return (

@@ -7,7 +7,7 @@ export async function POST(request: Request) {
   const { number }: Partial<RequestTypes> = await request.json();
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/results`,
+    `https://teste-b.vercel.app/results`,
     {
       method: "POST",
       headers: {
