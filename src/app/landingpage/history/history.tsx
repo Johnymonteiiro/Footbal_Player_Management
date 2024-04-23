@@ -1,14 +1,13 @@
 import { NoResultCard } from "@/components/card/card";
 import { ResultCard } from "@/components/card/result_card";
 import { ScrollArea } from "@/components/ui/scroll-area";
-// import { GetData } from "@/service/fetch";
 import { DataTypes } from "@/types/types";
 import { History as HistoryIcon } from "lucide-react";
 
 export default async function History() {
   
-  // const data: DataTypes[] = await GetData();
-   const data: DataTypes[] = []
+   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/results`);
+  const data: DataTypes[] = await res.json();
 
   return (
     <>
