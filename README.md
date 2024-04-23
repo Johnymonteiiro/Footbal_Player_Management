@@ -32,11 +32,11 @@ processamento;
 
  
 ## 🛠 Tecnologias
-- <strong>Nodejs</strong>
+- <strong>Nextjs</strong>
 - <strong>Typescript</strong>
-- <strong>Fastify</strong>
-- <strong>Prisma</strong>
-- <strong>Vitest</strong>
+- <strong>Tailwind Css</strong>
+- <strong>Shadcn/ui</strong>
+- <strong>React-hot-toast</strong>
 - <strong>Zod</strong>
 
 ```bash
