@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { formSchema } from "./formValidation";
-import { GetData, SendData } from "@/service/fetch";
 import { usePrimeContext } from "@/context/context";
 import { DataTypes } from "@/types/types";
 
@@ -27,10 +26,10 @@ export function PrimeNumberForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const number = values.number;
-    const data: DataTypes[] = await SendData({ number: number });
+    // const data: DataTypes[] = await SendData({ number: number });
 
     if (data?.length > 0) {
-      await GetData(); //update my list
+      // await GetData(); //update my list
       setResult(data);
     }
   }
