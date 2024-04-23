@@ -15,10 +15,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { formSchema } from "./formValidation";
 import { usePrimeContext } from "@/context/context";
-import { DataTypes } from "@/types/types";
 
 export function PrimeNumberForm() {
-  const { setResult } = usePrimeContext();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -26,12 +24,7 @@ export function PrimeNumberForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const number = values.number;
-    // const data: DataTypes[] = await SendData({ number: number });
-
-    if (data?.length > 0) {
-      // await GetData(); //update my list
-      setResult(data);
-    }
+    console.log("teste", number);
   }
 
   return (
