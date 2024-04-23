@@ -8,7 +8,7 @@ import { History as HistoryIcon } from "lucide-react";
 
 export default async function History() {
 
-    const res = await fetch(`${env.NEXT_PUBLIC_BASE_URL}/results`);
+    const res = await fetch(`${env.NEXT_PUBLIC_BASE_URL}/`);
     const data: DataTypes[] = await res.json();
 
   return (

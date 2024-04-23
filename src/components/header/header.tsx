@@ -24,7 +24,10 @@ export function Header() {
 
         <div className="flex items-center">
           <ModeToggle />
-          <Link className="ml-2" href={""}>
+          <Link
+            className="ml-2"
+            href={"https://github.com/Johnymonteiiro/bridgeFrontend"}
+          >
             <FaGithub size={25} />
           </Link>
         </div>

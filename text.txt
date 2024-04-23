@@ -1,8 +1,0 @@
-    // const data: DataTypes[] = await SendData({ number: number });
-
-    // if (data?.length > 0) {
-    //   // await GetData(); //update my list
-    //   setResult(data);
-    // }
-
-      const { setResult } = usePrimeContext();
