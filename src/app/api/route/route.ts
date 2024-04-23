@@ -1,5 +1,3 @@
-import { PrimeErrorHandler } from "@/service/error/error";
-import { NextResponse } from "next/server";
 
 interface RequestTypes {
   number: number;
@@ -9,7 +7,7 @@ export async function POST(request: Request) {
   const { number }: Partial<RequestTypes> = await request.json();
 
   const res = await fetch(
-    `https://jsonplaceholder.org/posts`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/results`,
     {
       method: "POST",
       headers: {

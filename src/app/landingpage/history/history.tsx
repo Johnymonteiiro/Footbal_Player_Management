@@ -5,8 +5,9 @@ import { DataTypes } from "@/types/types";
 import { History as HistoryIcon } from "lucide-react";
 
 export default async function History() {
-  
-  const data: DataTypes[] = []
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
+    const data: DataTypes[] = await res.json();
 
   return (
     <>
