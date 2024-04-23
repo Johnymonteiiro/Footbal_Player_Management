@@ -14,25 +14,16 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { formSchema } from "./formValidation";
-import { usePrimeContext } from "@/context/context";
-import { SendData } from "@/service/fetch";
-import { DataTypes } from "@/types/types";
+
 
 export function PrimeNumberForm() {
 
-  const { setResult } = usePrimeContext();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const number = values.number;
-
-    const data: DataTypes[] = await SendData({ number: number });
-
-    if (data?.length > 0) {
-      setResult(data);
-    }
   }
 
   return (
