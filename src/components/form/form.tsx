@@ -29,7 +29,6 @@ export function PrimeNumberForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const number = values.number;
     const data: DataTypes[] = await SendData({ number: number });
-
     if (data?.length > 0) {
       setResult(data);
     }

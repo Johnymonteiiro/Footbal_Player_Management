@@ -6,6 +6,7 @@ import { usePrimeContext } from "@/context/context";
 import { CircleCheckBig } from "lucide-react";
 
 export default function Result() {
+  
   const { result } = usePrimeContext();
 
   return (
