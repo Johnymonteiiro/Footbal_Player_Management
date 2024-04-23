@@ -6,8 +6,6 @@ import { History as HistoryIcon } from "lucide-react";
 
 export default async function History() {
   
-   const res = await fetch(`https://jsonplaceholder.typicode.com/todos/1`);
-   console.log(res);
   const data: DataTypes[] = []
 
   return (
