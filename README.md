@@ -20,7 +20,7 @@ inteiro k
 [X] - Ao clicar no botão, os dados devem ser enviados ao backend para cálculo e
 processamento;
 
-### Rodando a API localmente:
+### Rodando o projeto localmente:
 
 #### Clone o projeto :  `use git clone `
 #### Rode o comando no terminal :  `yarn ` ou `npm install `
@@ -37,15 +37,6 @@ processamento;
 - <strong>Tailwind Css</strong>
 - <strong>Shadcn/ui</strong>
 - <strong>React-hot-toast</strong>
+- <strong>Lucide Icons</strong>
 - <strong>Zod</strong>
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
