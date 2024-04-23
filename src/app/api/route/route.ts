@@ -7,7 +7,7 @@ interface RequestTypes {
 
 export async function GET() {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/prime/result`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/results`);
 
     if (!res.ok) {
       return NextResponse.json({ message: "Failed to connect the database!" });
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
   const { number }: Partial<RequestTypes> = await request.json();
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/prime/calculate`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/calculate`,
     {
       method: "POST",
       headers: {

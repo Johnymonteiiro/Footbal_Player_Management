@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 export async function GetData() {
   try {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_LOCALHOST_URL}/api/route`,
+      `/api/route`,
       { next: { revalidate: 60 } }
     );
     if (!response.ok) {
