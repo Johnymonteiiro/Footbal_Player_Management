@@ -1,4 +1,4 @@
-<h1>Bridge | Test Frontend </h1>
+<h1>Footboll Player Management</h1>
 
 ### Descrição:
 O desafio envolve a implementação de funcionalidades web tanto no frontend quanto
