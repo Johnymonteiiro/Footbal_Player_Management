@@ -1,37 +1,25 @@
 <h1>Footboll Player Management</h1>
 
-### Descrição:
-O desafio envolve a implementação de funcionalidades web tanto no frontend quanto
-no backend. Você pode utilizar as linguagens, ferramentas e frameworks que achar mais
-adequados, porém sugerimos o uso de React ou Angular para a implementação de seu
-frontend e Java ou Kotlin com Springboot para o backend.
+### Descriptions:
+A Football Player Management application is a comprehensive digital solution designed to streamline and optimize the management of football players for clubs, teams, and organizations.
+This application provides a centralized platform to handle various aspects of player management, ensuring efficient and effective oversight of player activities, performance, and development..
 
-### Tasks:
-[X] - A aplicação deve possuir uma tela com um campo de texto que aceite apenas
-números inteiros e um botão;
+## Key Features:
+### Player Profiles:
 
-[X] - Permitir que o usuário insira um número
-inteiro k
+Detailed player profiles with personal information, contact details, and career history.
+Comprehensive statistics and performance metrics, including goals, assists, minutes played, and more.
+Medical and fitness records to monitor player health and injury history.
 
-[X] - Listar todos os resultados e com tempo estimado de execução na tela;
+### Team Management:
 
-[X] - Não deve ser possível enviar números negativos;
+Creation and management of team rosters, including player assignments and positions.
+Schedule management for training sessions, matches, and events.
+Communication tools for coaches and players to facilitate team coordination.
 
-[X] - Ao clicar no botão, os dados devem ser enviados ao backend para cálculo e
-processamento;
-
-### Rodando o projeto localmente:
-
-#### Clone o projeto :  `use git clone `
-#### Rode o comando no terminal :  `yarn ` ou `npm install `
-#### Crie um arquivo .env na raiz do projeto :  `copiar as variáveis ambiente no arquivo .env-exemple`
-#### Rode o comando no terminal :  `yarn dev` ou `npm run dev `
-
-### Rodar o build: 
-#### Rode o comando no terminal : `yarn build`  ou  `npm run buld`
 
  
-## 🛠 Tecnologias
+## 🛠 Tecnologies
 - <strong>Nextjs</strong>
 - <strong>Typescript</strong>
 - <strong>Tailwind Css</strong>
