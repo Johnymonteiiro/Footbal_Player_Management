@@ -8,8 +8,8 @@ import "./globals.css";
 const inter = Saira({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Prime numbers calculator",
-  description: "The easy way to calculate the primes numbers",
+  title: "Inter FC | Futebol Araranguá",
+  description: "The place where we choose the better dorsal",
 };
 
 export default function RootLayout({

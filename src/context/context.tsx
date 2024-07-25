@@ -1,6 +1,6 @@
 "use client";
 
-import { DataTypes } from "@/types/types";
+import { Prisma, User } from "@prisma/client";
 import {
   Dispatch,
   ReactNode,
@@ -12,8 +12,8 @@ import {
 
 
 interface ContextProps {
-  setResult: Dispatch<SetStateAction<DataTypes[]>>;
-  result: DataTypes[];
+  setUser: Dispatch<SetStateAction<Partial<User>>>;
+  user: Partial<User>;
 }
 
 interface ContextProviderProps {
@@ -23,18 +23,14 @@ interface ContextProviderProps {
 export const Context = createContext({} as ContextProps);
 
 export function ContextProvider({ children }: ContextProviderProps) {
-  const [result, setResult] = useState<DataTypes[]>([]);
+  const [user, setUser] = useState<Partial<User>>({});
 
   return (
-    <Context.Provider
-      value={{result, setResult}}
-    >
-      {children}
-    </Context.Provider>
+    <Context.Provider value={{ user, setUser }}>{children}</Context.Provider>
   );
 }
 
-export function usePrimeContext() {
+export function useDefaultAppContext() {
   const context = useContext(Context);
   return context;
 }
